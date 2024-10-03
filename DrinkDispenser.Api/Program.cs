@@ -46,6 +46,7 @@ drinksGroup.MapGet(
                     return Results.Ok(new GetDrinksResponse(results));
                 })
            .WithName("get available drinks")
+           .WithDescription("get available drinks")
            .WithOpenApi();
 
 drinksGroup.MapGet(
@@ -56,6 +57,7 @@ drinksGroup.MapGet(
                     return Results.Ok(new GetDrinkPriceResponse(price));
                 })
            .WithName("get drink price")
+           .WithDescription("get drink price")
            .WithOpenApi();
 
 app.Run();
